@@ -45,17 +45,18 @@ MAIN GAME CARD
 
 #game{
 
-    width:min(900px,95vw);
+    width:900px;
 
-    height:min(650px,95vh);
+    height:650px;
 
     background:white;
 
     border-radius:25px;
 
-    box-shadow:0 20px 60px rgba(0,0,0,.12);
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.12);
 
-    padding:25px;
+    padding:50px;
 
     position:relative;
 
@@ -213,15 +214,12 @@ MEMORY CARD
 
 .memoryCard{
 
-    width:100%;
-
-    max-width:700px;
-
-    max-height:85vh;
+    width:700px;
+    max-height:540px;
 
     background:white;
 
-    padding:25px;
+    padding:40px;
 
     border-radius:25px;
 
@@ -230,6 +228,7 @@ MEMORY CARD
     overflow-y:auto;
 
 }
+
 /* ==========================================
 LOADING BAR
 ========================================== */
@@ -292,47 +291,35 @@ MOBILE CONTROLS
 
 #controls{
 
-display:none;
+    position:absolute;
 
-flex-direction:column;
+    bottom:20px;
 
-align-items:center;
+    left:50%;
 
-justify-content:center;
+    transform:translateX(-50%);
 
-gap:10px;
+    display:none;
 
-margin-top:15px;
+    flex-direction:column;
 
-}
+    align-items:center;
 
-#controls div{
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-gap:10px;
+    gap:8px;
 
 }
 
 #controls button{
 
-width:55px !important;
+    width:60px;
 
-height:55px !important;
+    height:60px;
 
-padding:0 !important;
+    padding:0;
 
-margin:0;
+    border-radius:50%;
 
-font-size:26px;
-
-border-radius:50%;
-
-flex:none;
+    margin:0;
 
 }
 
@@ -404,21 +391,17 @@ transform:scale(1);
 MAZE
 ========================= */
 
-/* =========================
-MAZE
-========================= */
-
 #maze{
 
 display:grid;
 
-grid-template-columns:repeat(10,45px);
+grid-template-columns:repeat(10,55px);
 
-grid-template-rows:repeat(10,45px);
+grid-template-rows:repeat(10,55px);
 
 gap:3px;
 
-margin:25px auto;
+margin:30px auto;
 
 width:max-content;
 
@@ -426,9 +409,9 @@ width:max-content;
 
 .mazeCell{
 
-width:45px;
+width:55px;
 
-height:45px;
+height:55px;
 
 background:#ffeef3;
 
@@ -450,15 +433,16 @@ background:#f4c7d8;
 
 .mazeCell img{
 
-width:34px;
+width:42px;
 
-height:34px;
+height:42px;
 
 border-radius:50%;
 
 object-fit:cover;
 
 }
+
 #story{
     white-space:pre-wrap;
     line-height:1.8;
@@ -508,133 +492,5 @@ transition:.2s;
 transform:scale(1.03);
 
 border-color:#ff6fa5;
-
-}
-
-/* ==========================================
-MOBILE RESPONSIVE
-========================================== */
-
-@media(max-width:768px){
-
-#game{
-
-width:100vw;
-
-height:100vh;
-
-padding:15px;
-
-border-radius:0;
-
-}
-
-.memoryCard{
-
-width:100%;
-
-max-height:90vh;
-
-padding:20px;
-
-}
-
-h1{
-
-font-size:34px;
-
-}
-
-h2{
-
-font-size:22px;
-
-}
-
-p,
-pre{
-
-font-size:16px;
-
-}
-
-.memoryCard > button{
-
-width:100%;
-
-padding:14px;
-
-}
-    
-input{
-
-width:100%;
-
-}
-
-.loading{
-
-width:100%;
-
-}
-
-#photoPuzzle{
-
-grid-template-columns:repeat(3,90px);
-
-grid-template-rows:repeat(3,90px);
-
-gap:4px;
-
-}
-
-.photoTile{
-
-width:90px;
-
-height:90px;
-
-}
-
-#maze{
-
-grid-template-columns:repeat(10,30px);
-
-grid-template-rows:repeat(10,30px);
-
-gap:2px;
-
-}
-
-.mazeCell{
-
-width:30px;
-
-height:30px;
-
-}
-
-.mazeCell img{
-
-width:22px;
-
-height:22px;
-
-}
-
-}
-.mazeWrapper{
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-justify-content:center;
-
-width:100%;
-
-margin-top:20px;
 
 }
