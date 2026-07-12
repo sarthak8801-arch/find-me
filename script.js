@@ -1158,25 +1158,8 @@ Avoid the moving friends!
 
 </p>
 
-<div class="mazeWrapper">
+<div id="maze"></div>
 
-    <div id="maze"></div>
-
-    <div id="controls">
-
-        <div>
-            <button onclick="movePlayer(0,-1)">⬆️</button>
-        </div>
-
-        <div>
-            <button onclick="movePlayer(-1,0)">⬅️</button>
-            <button onclick="movePlayer(0,1)">⬇️</button>
-            <button onclick="movePlayer(1,0)">➡️</button>
-        </div>
-
-    </div>
-
-</div>
 <br>
 
 <button onclick="memory3Hint()">
@@ -1195,9 +1178,9 @@ drawMaze();
 
 startEnemies();
 
-document.getElementById("controls").style.display="flex";    
-    
 }
+
+
 
 // ======================================================
 // DRAW MAZE
