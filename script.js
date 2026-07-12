@@ -1158,21 +1158,25 @@ Avoid the moving friends!
 
 </p>
 
-<div id="maze"></div>
-<div id="controls">
+<div class="mazeWrapper">
 
-<div>
-<button onclick="movePlayer(0,-1)">⬆️</button>
+    <div id="maze"></div>
+
+    <div id="controls">
+
+        <div>
+            <button onclick="movePlayer(0,-1)">⬆️</button>
+        </div>
+
+        <div>
+            <button onclick="movePlayer(-1,0)">⬅️</button>
+            <button onclick="movePlayer(0,1)">⬇️</button>
+            <button onclick="movePlayer(1,0)">➡️</button>
+        </div>
+
+    </div>
+
 </div>
-
-<div>
-<button onclick="movePlayer(-1,0)">⬅️</button>
-<button onclick="movePlayer(0,1)">⬇️</button>
-<button onclick="movePlayer(1,0)">➡️</button>
-</div>
-
-</div>
-
 <br>
 
 <button onclick="memory3Hint()">
