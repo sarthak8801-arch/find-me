@@ -1195,9 +1195,9 @@ drawMaze();
 
 startEnemies();
 
+document.getElementById("controls").style.display="flex";    
+    
 }
-
-
 
 // ======================================================
 // DRAW MAZE
